@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yoji.changemarginspinner.MainActivity">
+
+    <TextView
+        android:id="@+id/changeLangTxtViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/langSpinnerId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/choose_language"/>
+
+    <Spinner
+        android:id="@+id/langSpinnerId"
+        app:layout_constraintTop_toBottomOf="@id/changeLangTxtViewId"
+        app:layout_constraintBottom_toTopOf="@id/changeMarginTxtViewId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/changeMarginTxtViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/langSpinnerId"
+        app:layout_constraintBottom_toTopOf="@id/marginSpinnerId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/choose_margin"/>
+
+    <Spinner
+        android:id="@+id/marginSpinnerId"
+        app:layout_constraintTop_toBottomOf="@id/changeMarginTxtViewId"
+        app:layout_constraintBottom_toTopOf="@id/okBtnId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/okBtnId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/marginSpinnerId"
+        app:layout_constraintBottom_toTopOf="@id/helloWorldTxtViewId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/ok"/>
+
+    <TextView
+        android:id="@+id/helloWorldTxtViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/okBtnId" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

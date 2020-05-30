@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Spinner Изменения отступов</string>
+    <string name="hello_world">Привет Мир!</string>
+    <string name="choose_language">Выберите язык:</string>
+    <string name="choose_margin">Выберите величину отступов:</string>
+    <string-array name="language_array">
+        <item>Русский</item>
+        <item>Английский</item>
+        <item>Испанский</item>
+        <item>Немецкий</item>
+        <item>Французский</item>
+    </string-array>
+    <string-array name="margin_array">
+        <item>Стандартнеы</item>
+        <item>Маленькие</item>
+        <item>Средние</item>
+        <item>Большие</item>
+    </string-array>
+</resources>

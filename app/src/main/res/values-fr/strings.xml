@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Choisissez le Spinner de Marge</string>
+    <string name="hello_world">Bonjour le Monde!</string>
+    <string name="choose_language">Choisissez la langue:</string>
+    <string name="choose_margin">Choisissez la marge:</string>
+    <string-array name="language_array">
+        <item>Russe</item>
+        <item>Anglais</item>
+        <item>Espagnol</item>
+        <item>Allemand</item>
+        <item>Français</item>
+    </string-array>
+    <string-array name="margin_array">
+        <item>Défaut</item>
+        <item>Petit</item>
+        <item>Moyen</item>
+        <item>Grand</item>
+    </string-array>
+</resources>
